@@ -60,7 +60,7 @@ while True:
             sell_crypto_currency("ETH")
             post_message(myToken,"#engineer", "Coin sell completed")
     
-        current_price = pybithumb.get_current_price("BTC")          
+        current_price = pybithumb.get_current_price("ETH")          
         if (current_price > target_price) and (current_price > ma5):
             if (now > mid + datetime.timedelta(minutes=2)):
                 buy_crypto_currency("ETH")
