@@ -3,9 +3,9 @@ import pybithumb
 import datetime
 import requests
 
-con_key = "78d5c7cea79e32fedaa782a5093dd4c5"
-sec_key = "ad9108675991fcaeb3b8b433dbe0a33b"
-myToken = "xoxb-2419582512212-2419602096964-YEyaeOvAy5eZd0cxskiPIMX4"
+con_key = "e0adab55659113a21b209382eeedc90d"
+sec_key = "d43f3af07cef1d46f086e012c0c443dc"
+myToken = "xoxb-2419582512212-2419602096964-4GFKQCsNLCwvJ3uM2cuARiJR"
 
 def post_message(token, channel, text):
     response = requests.post("https://slack.com/api/chat.postMessage",
@@ -47,7 +47,7 @@ mid = datetime.datetime(now.year, now.month, now.day) + datetime.timedelta(1)
 yesterday_check = datetime.datetime(now.year, now.month, now.day) - datetime.timedelta(1)
 ma5 = get_yesterday_ma5("ETH")
 target_price = get_target_price("ETH")
-post_message(myToken,"#engineer", "autotrade start")
+post_message(myToken,"#engineer", "autotrade start" + "target_price : " + str(target_price))
 
 while True:
     try:
