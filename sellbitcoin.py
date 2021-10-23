@@ -149,24 +149,28 @@ while True:
             if (now > mid_yesterday + datetime.timedelta(minutes=5)):
                 buy_crypto_currency(ticker_1, krw_1)
                 buy_price_1 = current_price_1
+                target_price_1 = 1000000000
                 # post_message(myToken,"#engineer", "BTC buy completed") 
         
         if (current_price_2 > target_price_2) and (current_price_2 > ma5_2):
             if (now > mid_yesterday + datetime.timedelta(minutes=5)):
                 buy_crypto_currency(ticker_2, krw_2)
                 buy_price_2 = current_price_2
+                target_price_2 = 1000000000
                 # post_message(myToken,"#engineer", "BTC buy completed") 
         
         if (current_price_3 > target_price_3) and (current_price_3 > ma5_3):
             if (now > mid_yesterday + datetime.timedelta(minutes=5)):
                 buy_crypto_currency(ticker_3, krw_3)
                 buy_price_3 = current_price_3
+                target_price_3 = 1000000000
                 # post_message(myToken,"#engineer", "BTC buy completed") 
         
         if (current_price_4 > target_price_4) and (current_price_4 > ma5_4):
             if (now > mid_yesterday + datetime.timedelta(minutes=5)):
                 buy_crypto_currency(ticker_4, krw_4)
                 buy_price_4 = current_price_4
+                target_price_4 = 1000000000
                 # post_message(myToken,"#engineer", "BTC buy completed") 
          
         rate_1 = (current_price_1 - buy_price_1) / buy_price_1 * 100
